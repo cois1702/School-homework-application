@@ -1,0 +1,159 @@
+/* ---------- General Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- Body & Background ---------- */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* gradient background */
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ---------- School Header ---------- */
+#schoolHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#schoolLogo {
+  height: 50px;
+  margin-right: 10px;
+}
+#schoolName {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+/* ---------- Role Selection ---------- */
+#role {
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ---------- Forms (Admin, Teacher, Student) ---------- */
+#adminForm, #teacherForm, #studentForm,
+#adminControls, #teacherControls, #studentAnnouncements {
+  background-color: rgba(255, 255, 255, 0.95); /* semi-transparent */
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+/* Form Headings */
+#adminForm h3, #teacherForm h3, #studentForm h3,
+#adminControls h3, #teacherControls h3, #studentAnnouncements h3 {
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* Inputs and Selects */
+#adminForm input, #teacherForm input, #studentForm input,
+#adminForm select, #teacherForm select, #studentForm select,
+#adminControls input, #teacherControls input, #teacherControls select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* App Section */
+#app {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  background-color: rgba(255,255,255,0.9);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* Panels inside App */
+#adminControls, #teacherControls, #studentAnnouncements {
+  margin-bottom: 20px;
+}
+
+/* Task & Announcement Lists */
+#taskList li, #announcementList li, #studentAnnouncementList li {
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  margin: 6px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+#taskList li:hover, #announcementList li:hover, #studentAnnouncementList li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Delete Buttons in Lists */
+#taskList li button, #announcementList li button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+#taskList li button:hover, #announcementList li button:hover {
+  background-color: #c0392b;
+}
+
+/* Labels in Forms */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* Done Task Style */
+.done {
+  text-decoration: line-through;
+  color: #888;
+}
